@@ -19,6 +19,10 @@ public class WordController {
 	PalindromeResult get(@PathVariable String word) {
 
 		// palindromeService = new PalindromeService();
+		
+		if (word == null) {
+			return null;
+		}
 		return palindromeService.makePalindromeCommputation(word);
 	}
 

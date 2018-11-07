@@ -16,9 +16,7 @@ public class PalindromeServiceImpl implements PalindromeService {
 
 	public PalindromeResult makePalindromeCommputation(String word) {
 
-		if (word == null) {
-			return null;
-		}
+	
 
 		PalindromeResult palindromeResult = new PalindromeResult();
 		palindromeResult.setWord(word);

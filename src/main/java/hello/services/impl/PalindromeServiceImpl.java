@@ -33,7 +33,9 @@ public class PalindromeServiceImpl implements PalindromeService {
 		
 		// check if character is same at both ends of the word.
 		// If it doesn't match return false
-		for (int i = 0; i < wordToTest.length(); i++) {
+		
+		int wordLength = wordToTest.length();
+		for (int i = 0; i < wordLength; i++) {
 			if (word.charAt(i) != word.charAt(word.length() - i - 1)) {
 				return false;
 			}
